@@ -180,7 +180,7 @@ export default function Contact() {
       </a>
     </div>
     <div className=" text-gray-400 hover:text-gray-500 px-4 py-1">
-      <a href="https://wa.me/015231322768" target="_blank" rel="noopener noreferrer">
+      <a href="https://wa.me/+4915231322768" target="_blank" rel="noopener noreferrer">
         <span className="sr-only">WhatsApp</span>
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" className="h-6 w-6" aria-hidden="true" />
       </a>
