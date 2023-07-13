@@ -12,6 +12,7 @@ import {
   SunIcon,
   UserGroupIcon,
 } from '@heroicons/react/20/solid'
+import { useEffect } from 'react'
 
 const benefits = [
   'Termintreu und Kundenorientiert',
@@ -52,9 +53,9 @@ export default function About() {
             ))}
           </ul>
           <div className="mt-6">
-            <a href="#" className="text-sm font-semibold leading-5 text-indigo-400">
-              Erfahre mehr über meine Arbeit <span aria-hidden="true">&rarr;</span>
-            </a>
+          <a href="#galerie" className="text-sm font-semibold leading-5 text-indigo-400">
+                Erfahre mehr über meine Arbeit <span aria-hidden="true">⤵</span>
+              </a>
           </div>
         </div>
       </div>

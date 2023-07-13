@@ -5,11 +5,11 @@ import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'Über mich', href: '#' },
-  { name: 'Garten', href: '#' },
-  { name: 'Haus', href: '#' },
-  { name: 'Galerie', href: '#' },
-  { name: 'Kontakt', href: '#' },
+  { name: 'Über mich', href: '#about' },
+  { name: 'Garten', href: '#garten' },
+  { name: 'Haus', href: '#haus' },
+  { name: 'Galerie', href: '#galerie' },
+  { name: 'Kontakt', href: '#contact' },
 ]
 
 export default function Hero() {
@@ -115,12 +115,12 @@ export default function Hero() {
             </p>
             <div className="mt-8 flex items-center gap-x-6">
               <a
-                href="#"
+                href="#contact"
                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Angebot anfordern
               </a>
-              <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+              <a href="#galerie" className="text-sm font-semibold leading-6 text-gray-900">
                 Meine Arbeit <span aria-hidden="true">→</span>
               </a>
             </div>

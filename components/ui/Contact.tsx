@@ -5,10 +5,10 @@ import { BuildingOffice2Icon, EnvelopeIcon, PhoneIcon } from '@heroicons/react/2
 export default function Contact() {
   return (
     <div className="relative isolate bg-gray-900 h-screen overflow-y-auto">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-1">
         <div className="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
-            <div className="absolute inset-y-0 left-0 -z-10 w-full ring-1 ring-white/5 lg:w-1/2">
+            <div className="absolute inset-y-0 left-0 -z-10 w-full ring-1 ring-white/5 lg:w-full">
               <svg
                 className="absolute inset-0 h-full w-full stroke-gray-700 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
                 aria-hidden="true"
@@ -82,8 +82,7 @@ export default function Contact() {
                 </dd>
               </div>
             </dl>
-          </div>
-        </div>
+          
         {/* <form action="#" method="POST" className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48">
           <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
@@ -168,7 +167,7 @@ export default function Contact() {
             </div>
           </div>
         </form> */}
-    <p className="text-center">
+    <p className="text-center sm:overflow-hidden">
       Sende mir eine Anfrage über Instagram oder WhatsApp!
     </p>
   </div>
@@ -192,5 +191,7 @@ export default function Contact() {
     </p>
   </div>
 </div>
+</div>
+        </div>
   )
 }

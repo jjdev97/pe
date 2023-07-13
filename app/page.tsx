@@ -9,14 +9,24 @@ import { ScrollToTop } from '@/components/ui/scrollToTop'
 export default function Home() {
   return (
     <main>
-      <section className="mx-auto mb-8 h-screen w-screen sm:overflow-hidden">
+      <div id="home" className="mx-auto mb-8 h-screen w-screen sm:overflow-hidden">
       <Hero />
-      </section>
+      </div>
+      <div id="about">
       <About />
+      </div>
+      <div id="garten">
       <Garten />
+      </div>
+      <div id="haus">
       <Haus />
+      </div>
+      <div id="galerie">
       <Galerie />
+      </div>
+      <div id="contact">
       <Contact />
+      </div>
       <ScrollToTop />
     </main>
   )
