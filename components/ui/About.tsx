@@ -33,7 +33,7 @@ export default function About() {
       <div className="mx-auto flex flex-col gap-6 bg-white/5 px-4 py-8 ring-1 ring-white/10 sm:rounded-3xl sm:p-6 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:py-10 xl:gap-x-10">
         <img
           className="h-60 w-full object-cover shadow-xl lg:h-80 lg:w-96 lg:flex-none lg:rounded-2xl"
-          src="/logo_pe.png"
+          src="/logo-weiss1.jpeg"
           alt="t-shirt bedruckt mit dem Logo von Patrick Eckstein"
         />
         <div className="w-full flex-auto">
