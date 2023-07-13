@@ -31,7 +31,8 @@ const features = [
 
 export default function Garten() {
   return (
-    <div className="bg-white h-screen overflow-hidden sm:overflow-auto py-16 sm:py-32">
+    <section className=" bg-white overflow-y-auto">
+    <div className="bg-white h-screen py-16 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           <div>
@@ -40,8 +41,7 @@ export default function Garten() {
             <p className="mt-6 text-base leading-7 text-gray-600">
               Ein gepflegter Garten verbessert das Wohlbefinden und die Lebensqualität. Sie haben keine Zeit, sich selbst um Ihren Garten zu kümmern? Kein Problem. Ich helfe gerne.
             </p>
-            <img src="/garten.png" alt="Grünpflege" className="mx-auto my-auto" />
-          </div>
+            </div>
           <dl className="col-span-2 grid grid-cols-1 text-base leading-7 text-gray-600 sm:grid-cols-2 lg:gap-y-8">
             {features.map((feature) => (
               <div key={feature.name} className="relative pl-9">
@@ -56,5 +56,6 @@ export default function Garten() {
         </div>
               </div>
     </div>
+    </section>
   )
 }

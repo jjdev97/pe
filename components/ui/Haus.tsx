@@ -29,32 +29,31 @@ const features2 = [
 
 export default function Haus() {
   return (
-    <div className="bg-white/5  text-white h-screen overflow-hidden hover:overflow-hidden sm:overflow-auto py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 overflow-hidden hover:overflow-hidden">
-          <div>
-            <h2 className="text-base font-semibold leading-7 text-white">Ihr Zuhause in besten Händen.</h2>
-            <p className="mt-2 text-2xl font-bold tracking-tight ttext-white sm:text-xl">Hausmeisterdienstleistungen</p>
-            <p className="mt-6 text-base leading-7 text-white">
+    <section className="mb-8 bg-black overflow-y-auto">
+    <div className="bg-white/5 text-white h-screen py-24 sm:py-32">
+    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-4 gap-y-8 sm:gap-y-10 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <div>
+          <h2 className="text-base font-semibold leading-7 text-white">Ihr Zuhause in besten Händen.</h2>
+          <p className="mt-2 text-2xl font-bold tracking-tight text-white sm:text-xl">Hausmeisterdienstleistungen</p>
+          <p className="mt-6 text-base leading-7 text-white">
             Hausmeisterdienstleistungen erhalten und steigern den Wert und die Sicherheit Ihrer Immobilie. Außerdem sparen Sie Zeit und Mühe, wenn Sie diese Arbeiten von einem Fachmann durchführen lassen. Ich bin qualifiziert und erfahren in allen Bereichen der Hausmeisterdienstleistungen und kann Ihnen eine hohe Qualität und Zuverlässigkeit garantieren.
-            </p>
-            <img src="/popular-4.png" alt="Hausmeisterdienstleistungen" className="mx-auto my-auto" />
-          </div>
-          <dl className="col-span-2 grid grid-cols-1 gap-x-8 gap-y-10 text-base leading-7 text-white sm:grid-cols-2 lg:gap-y-16 overflow-hidden hover:overflow-hidden">
-            {features2.map((feature) => (
-              <div key={feature.name} className="relative pl-9">
-                <dt className="font-semibold text-white">
-                  <CheckIcon className="absolute left-0 top-1 h-5 w-5 text-white" aria-hidden="true" />
-                  {feature.name}
-                </dt>
-                <dd className="mt-2">{feature.description}</dd>
-              </div>
-            ))}
-          </dl>
+          </p>
         </div>
-      </div>
-      <div>
+        <dl className="col-span-2 grid grid-cols-1 gap-x-4 gap-y-6 sm:grid-cols-2 lg:gap-y-8">
+          {features2.map((feature) => (
+            <div key={feature.name} className="relative pl-8 sm:pl-9">
+              <dt className="font-semibold text-white">
+                <CheckIcon className="absolute left-0 top-1 h-4 w-4 text-white" aria-hidden="true" />
+                {feature.name}
+              </dt>
+              <dd className="mt-2">{feature.description}</dd>
+            </div>
+          ))}
+        </dl>
       </div>
     </div>
+  </div>  
+  </section>
   )
 }

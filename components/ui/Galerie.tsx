@@ -14,7 +14,7 @@ function Galerie() {
     "https://img.freepik.com/fotos-kostenlos/aelterer-mann-der-im-feld-mit-blumen-arbeitet_329181-12466.jpg",
   ]
   return (
-    <div className="bg-white h-screen overflow-hidden">
+    <div className="pt-8 bg-white h-screen overflow-x-auto">
     <div className="container mx-auto px-5 lg:px-32 lg:pt-24 bg-white">
       <div className="text-xl mb-5 font-semibold text-black">Eindrücke meiner Arbeit. </div>
       <div className="-m-1 flex flex-wrap md:-m-2">

@@ -4,11 +4,11 @@ import { BuildingOffice2Icon, EnvelopeIcon, PhoneIcon } from '@heroicons/react/2
 
 export default function Contact() {
   return (
-    <div className="relative isolate bg-gray-900 h-screen">
+    <div className="relative isolate bg-gray-900 h-screen overflow-hidden">
       <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
         <div className="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
-            <div className="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden ring-1 ring-white/5 lg:w-1/2">
+            <div className="absolute inset-y-0 left-0 -z-10 w-full ring-1 ring-white/5 lg:w-1/2">
               <svg
                 className="absolute inset-0 h-full w-full stroke-gray-700 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
                 aria-hidden="true"
@@ -25,7 +25,7 @@ export default function Contact() {
                     <path d="M130 200V.5M.5 .5H200" fill="none" />
                   </pattern>
                 </defs>
-                <svg x="100%" y={-1} className="overflow-visible fill-gray-800/20">
+                <svg x="100%" y={-1} className=" fill-gray-800/20">
                   <path d="M-470.5 0h201v201h-201Z" strokeWidth={0} />
                 </svg>
                 <rect width="100%" height="100%" strokeWidth={0} fill="url(#54f88622-e7f8-4f1d-aaf9-c2f5e46dd1f2)" />
@@ -84,7 +84,7 @@ export default function Contact() {
             </dl>
           </div>
         </div>
-        <form action="#" method="POST" className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48">
+        {/* <form action="#" method="POST" className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48">
           <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
               <div>
@@ -167,8 +167,30 @@ export default function Contact() {
               </button>
             </div>
           </div>
-        </form>
-      </div>
+        </form> */}
+    <p className="text-center">
+      Sende mir eine Anfrage über Instagram oder WhatsApp!
+    </p>
+  </div>
+  <div className="flex justify-center mt-4">
+    <div className="text-gray-400 hover:text-gray-500 px-4 py-1">
+      <a href="https://www.instagram.com/p.e.hausmeisterdienstleistung?igshid=NTc4MTIwNjQ2YQ==" target="_blank" rel="noopener noreferrer">
+        <span className="sr-only">Instagram</span>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" className="h-6 w-6" aria-hidden="true" />
+      </a>
     </div>
+    <div className=" text-gray-400 hover:text-gray-500 px-4 py-1">
+      <a href="https://wa.me/015231322768" target="_blank" rel="noopener noreferrer">
+        <span className="sr-only">WhatsApp</span>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" className="h-6 w-6" aria-hidden="true" />
+      </a>
+    </div>
+  </div>
+  <div className="mt-8 md:order-1 md:mt-0">
+    <p className="text-center text-xs leading-5 text-gray-500">
+      &copy; 2023 Patrick Eckstein | Made with ❤️ in Germany
+    </p>
+  </div>
+</div>
   )
 }
